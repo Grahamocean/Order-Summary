@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/Font/Avenir\ Book.ttf);
+}
+:root {
+  --primary-font: Avenir;
+}
+main {
+  background-image: url(/images/pattern-background-desktop.svg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* padding: 50px 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.hero-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  /* padding: 20px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.hero-image {
+  width: 100%;
+  height: 150px;
+}
+
+.hero-image img {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.hero-section-body {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.hero-section-body h3 {
+  font-size: 1.5em;
+  font-family: var(--primary-font);
+  font-weight: 1000;
+  padding-bottom: 1rem;
+}
+
+.hero-section-body p {
+  text-align: center;
+  font-family: var(--primary-font);
+  line-height: 1.2;
+  color: #808080;
+}
+
+.subcription-plan {
+  display: flex;
+  align-items: center;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  border-radius: 10px;
+  width: 250px;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  background-color: #699eca18;
+}
+.plan-box-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  gap: 1rem;
+}
+
+.music {
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.music img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.annual {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.annual p {
+  color: #000000;
+  font-size: 1.2em;
+  font-family: var(--primary-font);
+  font-weight: bolder;
+}
+
+.annual span {
+  color: #808080;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plan-box-right > a {
+  text-decoration: underline;
+}
+button {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
+  background-color: #2b1edf;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero-section-body a {
+  text-decoration: none;
+}
